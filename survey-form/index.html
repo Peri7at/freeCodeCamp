@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="name">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="name">Age</label>
+          <input
+            id="number"
+            type="number"
+            name="age"
+            min="12"
+            max="100"
+            class="form-control"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>Would you recommend our services to a friend?</p>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="definitely"
+              class="input-radio"
+              checked
+            />
+            Definitely
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="maybe"
+              class="input-radio"
+            />
+            Maybe
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="not-sure"
+              class="input-radio"
+            />
+            Not sure
+          </label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
